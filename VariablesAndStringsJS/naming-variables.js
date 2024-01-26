@@ -21,3 +21,11 @@ let calculateTotalPrice = (price, tax) => price + tax; // Good: Descriptive func
 let x = 25;               // Bad: Unclear what x represents
 const number = 3;         // Bad: Generic name, should indicate its role as a constant
 let fn = (a, b) => a + b; // Bad: Non-descriptive function and parameter names
+
+
+/*Variables should have clear, descriptive names.
+CamelCase convention in JavaScript.
+Examples of good and bad naming practices.*/
+
+/*Enhances code readability and maintainability.
+Example illustrating the impact of good naming on code understanding.*/
