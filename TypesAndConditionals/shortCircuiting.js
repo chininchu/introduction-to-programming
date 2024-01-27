@@ -7,17 +7,36 @@
 Understand that && will stop at the first falsy value, and || will stop at the first truthy value.*/
 
 
-let user = null;
-let defaultUser = "Guest";
-
-let currentUser = user || defaultUser; // "Guest"
-console.log(currentUser);
+// let user = 0;
+// let defaultUser = "Guest";
+//
+// let currentUser = user && defaultUser;
+// console.log(currentUser);
 
 // Using && for a conditional action
 
-let isLoggedIn = true;
+// let isLoggedIn = true;
+//
+//
+// isLoggedIn && console.log(" ");
+//
+// const isAdmin = true;
+// const isOldEnough = user.age > 18;
+//
+// if (isAdmin && isOldEnough) {
+//     return "Access granted";
+// } else {
+//     return "Access denied";
+// }
+// }
 
+const num1 = 0;
 
-isLoggedIn && console.log("User is logged in.");
+const num2 = 5;
+
+if (num1 >= 0 && num2 > 0) {
+    console.log("Both numbers are positive");
+}
+
 
 

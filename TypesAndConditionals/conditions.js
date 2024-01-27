@@ -4,14 +4,18 @@
 
 /*Applications need the ability to do things based on different conditions. There are two ways of modifying flow control to achieve this:*/
 
-const prefersDarkMode = false;
+const prefersDarkMode = true;
 const prefersSolarizedMode = false;
 
 if (prefersDarkMode) {
     document.body.style.background = 'black';
-} else if (prefersSolarizedMode) {
-    document.body.style.background = 'palegoldenrod';
-} else {
+}
+
+// else if (prefersSolarizedMode) {
+//     document.body.style.background = 'palegoldenrod';
+// }
+
+else {
     document.body.style.background = 'ghostwhite';
 }
 
@@ -20,19 +24,19 @@ if (prefersDarkMode) {
 
 
 //TODO: Switch Statements;
-
-const colorMode = "solarized";
-
-switch (colorMode) {
-    case "solarized":
-        document.body.style.background = 'palegoldenrod';
-        break;
-    case 'dark':
-        document.body.style.background = 'black';
-        break;
-    default:
-        document.body.style.background = 'ghostwhite';
-}
+//
+// const colorMode = "solarized";
+//
+// switch (colorMode) {
+//     case "solarized":
+//         document.body.style.background = 'palegoldenrod';
+//         break;
+//     case 'dark':
+//         document.body.style.background = 'black';
+//         break;
+//     default:
+//         document.body.style.background = 'ghostwhite';
+// }
 
 
 //In switch statements, if none of the cases match, the default case runs.

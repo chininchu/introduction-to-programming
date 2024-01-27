@@ -21,8 +21,11 @@ Names must not use reserved words such as var
 // Example:
 
 var name = "Alice";
-var name = "Bob"; // Re-declaration
+// var name = "Bob"; // Re-declaration
 console.log(name); // Output: Bob
+
+
+
 
 
 

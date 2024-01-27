@@ -1,3 +1,4 @@
+// "use strict";
 
 
 //TODO Part 2: Writing Better Code with the use 'use strict'
@@ -14,8 +15,18 @@ Placed at the beginning of a script/function.
 
 */
 
-"use strict";
+// "use strict";
+
 name = "Alice"; // This will cause an error
+console.log(name);
+
+
+// Revisit this section about windows keyword
+
+
+
+
+
 
 /*Benefits of Strict Mode
 
@@ -29,5 +40,6 @@ Disallows duplicate parameter values.
 
 /*Hoisting - JS's ability to lift up variable declarations to the top of the file.
 * */
+
 
 
