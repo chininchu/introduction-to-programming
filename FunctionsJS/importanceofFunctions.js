@@ -85,6 +85,8 @@ function logMessage(action) {
 // Using the function throughout the application
 logMessage("User logged in");
 logMessage("Data updated");
+
+
 // ... Easily log more actions
 
 
