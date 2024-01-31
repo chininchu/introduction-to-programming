@@ -20,8 +20,9 @@ Using return to get output from a function.
 
 // Example Code
 
-function greet(name) {
-    return "Hello, " + name + "!";
-}
+// function greet(name) {
+//     return "Hello, " + name + "!";
+// }
+//
+// console.log(greet("Alice")); // Output: Hello, Alice!
 
-console.log(greet("Alice")); // Output: Hello, Alice!
