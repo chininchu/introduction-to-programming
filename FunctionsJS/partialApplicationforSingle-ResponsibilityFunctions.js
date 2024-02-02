@@ -41,5 +41,6 @@ const isEligibleForAutoLoan = createLoanEligibilityChecker(580);
 
 
 
-
-
+console.log(isEligibleForPersonalLoan(500));
+console.log(isEligibleForMortgage(300));
+console.log(isEligibleForAutoLoan(700));

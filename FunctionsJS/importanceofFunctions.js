@@ -21,45 +21,45 @@ Refactor a block of repetitive code into a function.*/
 // Scenario Without Functions
 
 // Calculating area of a rectangle
-let length1 = 10;
-let width1 = 5;
-let areaRectangle = length1 * width1;
-console.log("Area of the rectangle: " + areaRectangle);
+// let length1 = 10;
+// let width1 = 5;
+// let areaRectangle = length1 * width1;
+// console.log("Area of the rectangle: " + areaRectangle);
 
 // Calculating area of a circle
-let radius1 = 7;
-let areaCircle = 3.14 * radius1 * radius1;
-console.log("Area of the circle: " + areaCircle);
-
-// Later, calculating area for another rectangle
-let length2 = 6;
-let width2 = 3;
-let areaRectangle2 = length2 * width2;
-console.log("Area of the second rectangle: " + areaRectangle2);
+// let radius1 = 7;
+// let areaCircle = 3.14 * radius1 * radius1;
+// console.log("Area of the circle: " + areaCircle);
+//
+// // Later, calculating area for another rectangle
+// let length2 = 6;
+// let width2 = 3;
+// let areaRectangle2 = length2 * width2;
+// console.log("Area of the second rectangle: " + areaRectangle2);
 
 
 // Scenario With Functions
 
 
-function calculateRectangleArea(length, width) {
-    return length * width;
-}
-
-function calculateCircleArea(radius) {
-    return 3.14 * radius * radius;
-}
+// function calculateRectangleArea(length, width) {
+//     return length * width;
+// }
+//
+// function calculateCircleArea(radius) {
+//     return 3.14 * radius * radius;
+// }
 
 // Calculating area of a rectangle
-let areaRectangle = calculateRectangleArea(10, 5);
-console.log("Area of the rectangle: " + areaRectangle);
+// let areaRectangle = calculateRectangleArea(10, 5);
+// console.log("Area of the rectangle: " + areaRectangle);
 
 // Calculating area of a circle
-let areaCircle = calculateCircleArea(7);
-console.log("Area of the circle: " + areaCircle);
+// let areaCircle = calculateCircleArea(7);
+// console.log("Area of the circle: " + areaCircle);
 
 // Calculating area for another rectangle
-let areaRectangle2 = calculateRectangleArea(6, 3);
-console.log("Area of the second rectangle: " + areaRectangle2);
+// let areaRectangle2 = calculateRectangleArea(6, 3);
+// console.log("Area of the second rectangle: " + areaRectangle2);
 
 // ... Easily calculate more areas with the same functions
 
@@ -68,23 +68,25 @@ console.log("Area of the second rectangle: " + areaRectangle2);
 // Without Code Resuability
 
 // Logging a message in one part of the application
-console.log("User logged in at " + new Date());
-
-// Later in the code, logging another message
-console.log("Data updated at " + new Date());
+// console.log("User logged in at " + new Date());
+//
+// // Later in the code, logging another message
+// console.log("Data updated at " + new Date());
 
 // ... Repeating similar code throughout the application
 
 
 // With Code Reusability
 
-function logMessage(action) {
-    console.log(action + " at " + new Date());
-}
+// function logMessage(action) {
+//     console.log(action + " at " + new Date());
+// }
 
 // Using the function throughout the application
-logMessage("User logged in");
-logMessage("Data updated");
+// logMessage("User logged in");
+// logMessage("Data updated");
+//
+// logMessage("Error message happened at");
 
 
 // ... Easily log more actions
