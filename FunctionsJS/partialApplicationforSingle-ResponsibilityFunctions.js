@@ -19,9 +19,17 @@ Encourages Single Responsibility: Functions can be designed to do one thing and 
 
 // First, define a general function that checks if the credit score meets the minimum required score for a loan:
 
-function isEligibleForLoan(minCreditScore, creditScore) {
-    return creditScore >= minCreditScore;
-}
+const isEligibleForLoan = (minCreditScore, creditScore) =>  creditScore >= minCreditScore;
+
+
+console.log(isEligibleForLoan(500,600));
+
+
+
+
+
+
+
 
 
 // Partial Application for Loan Eligibility
@@ -29,18 +37,21 @@ function isEligibleForLoan(minCreditScore, creditScore) {
 // Using partial application, you can create functions for specific loan types based on their minimum credit score requirements:
 
 
-function createLoanEligibilityChecker(minCreditScore) {
-    return function (creditScore) {
-        return isEligibleForLoan(minCreditScore, creditScore);
-    };
-}
-
-const isEligibleForPersonalLoan = createLoanEligibilityChecker(600);
-const isEligibleForMortgage = createLoanEligibilityChecker(650);
-const isEligibleForAutoLoan = createLoanEligibilityChecker(580);
+// function createLoanEligibilityChecker(minCreditScore) {
+//     return function (creditScore) {
+//         return isEligibleForLoan(minCreditScore, creditScore);
+//     };
+// }
 
 
 
-console.log(isEligibleForPersonalLoan(500));
-console.log(isEligibleForMortgage(300));
-console.log(isEligibleForAutoLoan(700));
+
+// const isEligibleForPersonalLoan = createLoanEligibilityChecker(600);
+// const isEligibleForMortgage = createLoanEligibilityChecker(650);
+// const isEligibleForAutoLoan = createLoanEligibilityChecker(580);
+
+
+
+// console.log(isEligibleForPersonalLoan(500));
+// console.log(isEligibleForMortgage(650));
+// console.log(isEligibleForAutoLoan(500));

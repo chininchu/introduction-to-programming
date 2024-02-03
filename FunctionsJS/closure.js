@@ -22,18 +22,33 @@ Maintaining State in Async Operations: In asynchronous operations like callbacks
 // Basic Example
 
 
-const naMe = "Andrew";
+function outerFunction() {
+    const age = 20;
+    const height = 5.0;
 
-function outerFunction(outerVariable) {
-    const lastname = "Chu"
+    return () => {
 
-    return function innerFunction(innerVariable) {
-        console.log('Outer Variable: ' + outerVariable);
-        console.log('Inner Variable: ' + innerVariable);
-        console.log(naMe);
-        console.log(lastname);
-    };
+        return `I am ${age} years old and my height is ${height}`;
+    }
 }
+
+const functionValue = outerFunction();
+
+console.log(functionValue());
+
+
+
+// console.log(mainFunction()); // Call the function returned by outerFunction and log its return value
+
+
+// return function innerFunction(innerVariable) {
+//     console.log('Outer Variable: ' + outerVariable);
+//     console.log('Inner Variable: ' + innerVariable);
+//     console.log(naMe);
+//     console.log(lastname);
+//
+// };
+
 
 // const newFunction = outerFunction('outside');
 // newFunction('inside');

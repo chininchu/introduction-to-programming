@@ -30,7 +30,7 @@ Refactor a block of repetitive code into a function.*/
 // let radius1 = 7;
 // let areaCircle = 3.14 * radius1 * radius1;
 // console.log("Area of the circle: " + areaCircle);
-//
+
 // // Later, calculating area for another rectangle
 // let length2 = 6;
 // let width2 = 3;
@@ -41,10 +41,15 @@ Refactor a block of repetitive code into a function.*/
 // Scenario With Functions
 
 
-// function calculateRectangleArea(length, width) {
-//     return length * width;
-// }
-//
+function calculateRectangleArea(length, width) {
+    return length * width;
+}
+
+calculateRectangleArea(10,15);
+
+
+// console.log(calculateRectangleArea(10,15));
+
 // function calculateCircleArea(radius) {
 //     return 3.14 * radius * radius;
 // }
