@@ -1,4 +1,5 @@
 "use strict";
+
 /*Accessing Array Elements
 
 How-To: You can access any element in an array by using its index, with the first element at index 0.*/

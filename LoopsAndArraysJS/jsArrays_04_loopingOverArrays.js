@@ -22,7 +22,6 @@ i++ is the increment statement, which increases the value of i by 1 in each iter
 console.log("The value of i is: " + i) logs the current value of i to the console in each iteration.*/
 
 
-
 // Example og a for loop in JS over an array
 
 
