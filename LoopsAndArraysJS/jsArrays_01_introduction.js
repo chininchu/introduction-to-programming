@@ -2,6 +2,9 @@
 /*Definition: An array is a collection of data items stored under a single name. Each item in an array is called an element, and each element is accessed by its numeric index, starting with zero.*/
 
 
+
+
+
 const fruits = ['Apple', 'Banana', 'Cherry'];
 console.log(fruits);
 

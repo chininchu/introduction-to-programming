@@ -9,9 +9,11 @@ Loops offer a powerful way to iterate over an array, performing operations on ea
 
 
 // Example of a for loop in JavaScript
-for (let i = 0; i < 5; i++) {
-    console.log("The value of i is: " + i);
-}
+
+
+// for (let i = 0; i < 5; i++) {
+//     console.log("The value of i is: " + i);
+// }
 
 /*let i = 0 initializes the loop variable i to 0.
 
@@ -26,9 +28,27 @@ console.log("The value of i is: " + i) logs the current value of i to the consol
 
 
 // Example of a for loop iterating over an array
-const fruits = ["Apple", "Banana", "Orange", "Mango"];
 
-for (let i = 0; i < fruits.length; i++) {
-    console.log("Fruit at index " + i + " is: " + fruits[i]);
+
+// for (let i = 0; i < fruits.length; i+=2) {
+//     console.log("Fruit at index " + i + " is: " + fruits[i]);
+// }
+
+const fruits1 = ["Apple", "Banana", "Orange", "Mango"];
+
+
+function fruitList() {
+
+
+    for (let i = 0; i < fruits.length; i++) {
+
+        console.log(fruits[i]);
+
+
+    }
+
+
 }
 
+
+fruitList();
