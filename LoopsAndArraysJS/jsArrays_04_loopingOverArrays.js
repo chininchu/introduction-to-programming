@@ -37,18 +37,3 @@ console.log("The value of i is: " + i) logs the current value of i to the consol
 const fruits1 = ["Apple", "Banana", "Orange", "Mango"];
 
 
-function fruitList() {
-
-
-    for (let i = 0; i < fruits.length; i++) {
-
-        console.log(fruits[i]);
-
-
-    }
-
-
-}
-
-
-fruitList();
