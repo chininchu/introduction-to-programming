@@ -34,6 +34,39 @@ console.log("The value of i is: " + i) logs the current value of i to the consol
 //     console.log("Fruit at index " + i + " is: " + fruits[i]);
 // }
 
-const fruits1 = ["Apple", "Banana", "Orange", "Mango"];
+
+// function repeatAStr(num) {
+//     //then using either a for or while loop, it will print out the string "Hello World!" to the console the amount of times as the parameter
+//     //output is a 'str'
+//
+//     for (let i = 0; i <= num; i++) {
+//         console.log('Hello World!');
+//     }
+// }
+//
+// repeatAStr(3);
+
+
+function removeVowels(str) {
+
+
+    return str.replace(/[aeiouAEIOU]/g, "");
+
+
+}
+
+const originalString = "Andrew";
+
+const stringWithoutVowels = removeVowels(originalString);
+
+
+console.log(stringWithoutVowels);
+
+
+
+
+
+
+
 
 
