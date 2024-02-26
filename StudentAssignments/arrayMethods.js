@@ -37,18 +37,18 @@
 
 // PUT YOUR CODE HERE
 
-const names = ["andrew", "mary", "susan", "john"];
-
-
-const printNames = names.forEach((name, index) => {
-
-
-    console.log(`${index} : ${name}`);
-
-
-});
-
-console.log(printNames);
+// const names = ["andrew", "mary", "susan", "john"];
+//
+//
+// const printNames = names.forEach((name, index) => {
+//
+//
+//     console.log(`${index} : ${name}`);
+//
+//
+// });
+//
+// console.log(printNames);
 
 
 //---------- QUESTION 2 ----------
@@ -62,17 +62,17 @@ console.log(printNames);
 
 // PUT YOUR CODE HERE
 
-const trees = [{type: "oak", height: "30m"}, {type: "elm", height: "21m"}];
+// const trees = [{type: "oak", height: "30m"}, {type: "elm", height: "21m"}];
 
 
-const logTreeType = trees.forEach((tree, index) => {
-
-    console.log(tree.type);
-
-
-});
-
-console.log(logTreeType);
+// const logTreeType = trees.forEach((tree, index) => {
+//
+//     console.log(tree.type);
+//
+//
+// });
+//
+// console.log(logTreeType);
 
 
 //---------- QUESTION 3 ----------
@@ -112,6 +112,23 @@ console.log(logTreeType);
 //   134%
 
 // PUT YOUR CODE HERE
+
+
+// Does the fucntion take a parameter and if it does, what is the data type.
+// Is it repetitive (For Loop)
+// What is the return type (data type)
+// What method am I going to use ??
+
+const decimals = [0.75, 0.91, 0.2, 1.34];
+
+const logPercentages = decimals.forEach((decimal, index) => {
+
+    console.log(decimal * 100 + "%");
+
+
+});
+
+console.log(logPercentages);
 
 
 // ----- Practice JS Array Methods - map -----
