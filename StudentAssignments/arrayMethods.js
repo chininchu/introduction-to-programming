@@ -306,6 +306,14 @@ console.log(logPercentages);
 // PUT YOUR CODE HERE
 
 
+let numBers = [4, 41, 832, 72, 89, 120, 431, 505, 70];
+
+
+const firstOdd = numBers.find((number) => number % 2 !== 0 ? number : undefined);
+
+console.log(firstOdd);
+
+
 // ---------- QUESTION 18 ----------
 // Write a function called 'getAdministrator' that takes an array of objects as an argument (like the one used in question 9).  The function should use the find method to return the first object that has 'isAdmin: true' from the array of user objects.
 
@@ -355,10 +363,44 @@ console.log(logPercentages);
 // Write a function called 'startsWithLetter' that takes two arguments: an array of strings and a letter.  The function should use the find method to return the first string in the array that starts with the letter provided as the argument.  If there's no string in the array that starts with that letter, return undefined. The function should leave lowercase and uppercase letters alone.
 // STRETCH GOAL: Throw an error "Letter must be a string of length 1" if the second argument is not a string, or if its length is more than 1.
 
+
+// Write a function called startsWithLetter
+// Takes 2 parm (Look into the definion of letter. It's called char)
+// Use the find method
+// return something. Look into shift and/or unshift
+// If statement
+// toUppercase // toLowercase
+
+
+const startsWithLetter = (arrayOfStrings, letter) => {
+
+    const result = arrayOfStrings.find((element) => {
+
+        if (element.charAt(0) === letter) {
+
+            return element;
+
+
+        } else {
+
+            return undefined;
+        }
+
+
+    });
+
+    return result;
+
+
+}
+
+console.log(startsWithLetter(["Do you want to hear a joke?", "It's about a three-legged dog", "The dog walks into a bar", "The dog says, ", "\"I'm looking for the man who shot my paw\"", "Get it?"], "I"));
+
+
 // Example array:
 //    let strings = ["Do you want to hear a joke?", "It's about a three-legged dog", "The dog walks into a bar", "The dog says, ", "\"I'm looking for the man who shot my paw\"", "Get it?"]
 // EXAMPLE LOG 1:
-//    NONE - call your function like so: startsWithTheLetter(strings, "T")
+//    NONE - call your function like so: startsWithTheLetter(tringss, "T")
 // EXAMPLE OUTPUT 1: (if using the example array above)
 //    "The dog walks into a bar"
 // EXAMPLE LOG 2:
@@ -375,6 +417,9 @@ console.log(logPercentages);
 //    Error: Letter must be a string of length 1
 
 // PUT YOUR CODE HERE
+
+
+
 
 
 
