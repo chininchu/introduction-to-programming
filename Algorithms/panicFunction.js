@@ -17,6 +17,9 @@ Example output: "I'M 😱 ALMOST 😱 OUT 😱 OF 😱 COFFEE!"
 const panic = (str) => {
 
 
+    // str.split(" ");
+
+
     return str.split(" ").join("😱").toUpperCase() + "!";
 
 
@@ -25,5 +28,22 @@ const panic = (str) => {
 
 // Test your function
 console.log(panic("I'm almost out of coffee"));
-console.log(panic("winter is coming"))
+
+
+// console.log(panic("winter is coming");
+
+console.log(panic("andrew is on vacation"));
+
+
+
+const str1 = "andrew";
+
+const array1 = str1.split(" ");
+
+
+
+
+
+
+
 

@@ -27,6 +27,8 @@ const whisper = (stringInput) => {
         result += stringInput[i].toLowerCase().replace("!", "");
 
 
+
+
     }
 
     return result;
