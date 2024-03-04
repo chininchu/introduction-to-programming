@@ -80,13 +80,34 @@ console.log(twoSum([1, 2, 3, 4, 5, 6, 7, 8, 9, 0], 10));
 // Write a function called pairProduct(arr, product) that accepts an array of numbers and a product (the result when two numbers were multiplied together) as arguments. The function should return a boolean indicating whether or not a pair of distinct elements in the array result in the product when multiplied together. You may assume that the input array contains unique elements.
 
 
-function pairProduct(arr, product){
+function pairProduct(arr, product) {
+
+    let seen = new Set();
+
+    for (let num in arr) {
+
+        // num * complimentNumber = product
+
+        // complimentNumber = product / num
+
+        let complimentNumber = product / num;
+
+        if (seen.has(complimentNumber)) {
+
+            return true;
 
 
+        }
+
+        seen.add(num);
+
+
+    }
+
+    return false;
 
 
 }
-
 
 
 //---------- QUESTION 4 ----------
@@ -94,4 +115,5 @@ function pairProduct(arr, product){
 
 // Write a function called strangeSums(arr) that accepts an array of numbers as an argument. The method should return a count of the number of distinct pairs of elements that have a sum of zero. You may assume that the input array contains unique elements.
 
-// PUT YOUR CODE HERE
+
+
