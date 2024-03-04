@@ -48,24 +48,30 @@ function twoSum(arr, target) {
 
     let seen = new Set();
 
-    for(let i = 0; i < arr.length; i++){
+    for (let i = 0; i < arr.length; i++) {
 
         let complimentNumber = target - arr[i];
 
+        // The has method checks to see if a value is in a set or not
+
+        if (seen.has(complimentNumber)) {
+
+            return true;
 
 
+        }
+
+        seen.add(arr[i]);
 
 
     }
 
-
-
-
+    return false;
 
 
 }
 
-console.log(twoSum([1, 2, 3, 3, 5, 6, 7, 8, 9, 0], 10));
+console.log(twoSum([1, 2, 3, 4, 5, 6, 7, 8, 9, 0], 10));
 
 
 //---------- QUESTION 3 ----------
@@ -73,7 +79,15 @@ console.log(twoSum([1, 2, 3, 3, 5, 6, 7, 8, 9, 0], 10));
 
 // Write a function called pairProduct(arr, product) that accepts an array of numbers and a product (the result when two numbers were multiplied together) as arguments. The function should return a boolean indicating whether or not a pair of distinct elements in the array result in the product when multiplied together. You may assume that the input array contains unique elements.
 
-// PUT YOUR CODE HERE
+
+function pairProduct(arr, product){
+
+
+
+
+}
+
+
 
 //---------- QUESTION 4 ----------
 // Strange Sums
