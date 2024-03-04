@@ -42,15 +42,31 @@
 
 // Write a function called twoSum(arr, target) that accepts an array and a target number as arguments. The function should return a boolean indicating if two distinct numbers of the array add up to the target value. You can assume that input array contains only unique numbers.
 
-const twoSum = (arr, target) => {
+function twoSum(arr, target) {
+
+    // This keeps track of the numbers
+
+    let seen = new Set();
+
+    for(let i = 0; i < arr.length; i++){
+
+        let complimentNumber = target - arr[i];
+
+
+
+
+
+    }
+
+
+
+
 
 
 }
 
+console.log(twoSum([1, 2, 3, 3, 5, 6, 7, 8, 9, 0], 10));
 
-// Write a function called twoSum(arr, target) that accepts an array and a target number as arguments. The function should return a boolean indicating if two distinct numbers of the array add up to the target value. You can assume that input array contains only unique numbers.
-
-// PUT YOUR CODE HERE
 
 //---------- QUESTION 3 ----------
 // Pair Product
