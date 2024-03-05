@@ -35,28 +35,144 @@
 
 // Write a function called pairsMaker(arr) that takes in an array as an argument. The function should return a 2-Dimensional array (an array of arrays) where the subarrays represent unique pairs of elements from the input array.
 
-// PUT YOUR CODE HERE
+// function pairsMaker(arr) {
+//
+//     // The set data structure will track that each element within the array to ensure that duplicate pairs are not being created.
+//
+//     let tracker = new Set();
+//
+//     let result = [];
+//
+//     for (let i = 0; i < arr.length; i++) {
+//
+//         if (tracker.has(i)) {
+//
+//             continue;
+//
+//         }
+//
+//         for (let j = i + 1; j < arr.length; j++) {
+//
+//             if (tracker.has(j)) {
+//
+//                 continue;
+//             }
+//
+//             result.push([arr[i], arr[j]]);
+//
+//
+//             tracker.add(i);
+//             tracker.add(j);
+//
+//             break;
+//
+//
+//         }
+//
+//
+//     }
+//
+//
+//     return result;
+//
+//
+// }
+//
+// console.log(pairsMaker([1, 2, 3, 3, 4, 5, 6, 7, 8, 9, 0]));
+
 
 //---------- QUESTION 2 ----------
 // Two Sum
 
 // Write a function called twoSum(arr, target) that accepts an array and a target number as arguments. The function should return a boolean indicating if two distinct numbers of the array add up to the target value. You can assume that input array contains only unique numbers.
 
-function twoSum(arr, target) {
+// function twoSum(arr, target) {
+//
+// // Post solution to Slack
+//
+// // This keeps track of the numbers
+//
+//     let seen = new Set();
+//
+//     for (let i = 0; i < arr.length; i++) {
+//
+//         let complimentNumber = target - arr[i];
+//
+//         // The has method checks to see if a value is in a set or not
+//
+//         if (seen.has(complimentNumber)) {
+//
+//             return true;
+//
+//
+//         }
+//
+//         seen.add(arr[i]);
+//
+//
+//     }
+//
+//     return false;
+//
+//
+// }
+//
+// console.log(twoSum([1,2,3,3,4,5,6,7,8,9,0],10));
 
-    // This keeps track of the numbers
+
+//---------- QUESTION 3 ----------
+// Pair Product
+
+// Write a function called pairProduct(arr, product) that accepts an array of numbers and a product (the result when two numbers were multiplied together) as arguments. The function should return a boolean indicating whether or not a pair of distinct elements in the array result in the product when multiplied together. You may assume that the input array contains unique elements.
+
+
+// function pairProduct(arr, product) {
+//
+//     let seen = new Set();
+//
+//     for (let i = 0; i < arr.length; i++) {
+//
+//
+//         let complimentNumber = product / arr[i];
+//
+//
+//         if (seen.has(complimentNumber)) {
+//
+//             return true;
+//
+//
+//         }
+//
+//         seen.add(arr[i]);
+//
+//
+//     }
+//
+//     return false;
+//
+//
+// }
+//
+// console.log(pairProduct([1, 2, 3, 3, 4, 5, 6, 7, 8, 9, 0], 10));
+
+
+//---------- QUESTION 4 ----------
+// Strange Sums
+
+// Write a function called strangeSums(arr) that accepts an array of numbers as an argument. The method should return a count of the number of distinct pairs of elements that have a sum of zero. You may assume that the input array contains unique elements.
+
+
+function strangeSums(arr) {
 
     let seen = new Set();
 
     for (let i = 0; i < arr.length; i++) {
 
-        let complimentNumber = target - arr[i];
+        let compliment = 0 - arr[i];
 
-        // The has method checks to see if a value is in a set or not
+        if (seen.has(compliment)) {
 
-        if (seen.has(complimentNumber)) {
-
-            return true;
+            return seen.size;
 
 
         }
@@ -66,54 +182,22 @@ function twoSum(arr, target) {
 
     }
 
-    return false;
-
-
-}
-
-console.log(twoSum([1, 2, 3, 4, 5, 6, 7, 8, 9, 0], 10));
-
-
-//---------- QUESTION 3 ----------
-// Pair Product
-
-// Write a function called pairProduct(arr, product) that accepts an array of numbers and a product (the result when two numbers were multiplied together) as arguments. The function should return a boolean indicating whether or not a pair of distinct elements in the array result in the product when multiplied together. You may assume that the input array contains unique elements.
-
-
-function pairProduct(arr, product) {
-
-    let seen = new Set();
-
-    for (let num in arr) {
-
-        // num * complimentNumber = product
-
-        // complimentNumber = product / num
-
-        let complimentNumber = product / num;
-
-        if (seen.has(complimentNumber)) {
-
-            return true;
-
-
-        }
-
-        seen.add(num);
-
-
-    }
-
-    return false;
+    return "The distinct numbers don't exist"
 
 
 }
 
 
-//---------- QUESTION 4 ----------
-// Strange Sums
+console.log(strangeSums([1, 2, 3, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]));
 
-// Write a function called strangeSums(arr) that accepts an array of numbers as an argument. The method should return a count of the number of distinct pairs of elements that have a sum of zero. You may assume that the input array contains unique elements.
+
+
+
+
+
+
+
+
 
 
 
