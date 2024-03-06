@@ -35,50 +35,27 @@
 
 // Write a function called pairsMaker(arr) that takes in an array as an argument. The function should return a 2-Dimensional array (an array of arrays) where the subarrays represent unique pairs of elements from the input array.
 
-// function pairsMaker(arr) {
-//
-//     // The set data structure will track that each element within the array to ensure that duplicate pairs are not being created.
-//
-//     let tracker = new Set();
-//
-//     let result = [];
-//
-//     for (let i = 0; i < arr.length; i++) {
-//
-//         if (tracker.has(i)) {
-//
-//             continue;
-//
-//         }
-//
-//         for (let j = i + 1; j < arr.length; j++) {
-//
-//             if (tracker.has(j)) {
-//
-//                 continue;
-//             }
-//
-//             result.push([arr[i], arr[j]]);
-//
-//
-//             tracker.add(i);
-//             tracker.add(j);
-//
-//             break;
-//
-//
-//         }
-//
-//
-//     }
-//
-//
-//     return result;
-//
-//
-// }
-//
-// console.log(pairsMaker([1, 2, 3, 3, 4, 5, 6, 7, 8, 9, 0]));
+function pairsMaker(arr) {
+    let uniqueElements = [...new Set(arr)]; // Convert array to a set to remove duplicates, then back to array
+    let pairs = []; // Initialize an empty array to store the unique pairs
+
+    // Iterate over each unique element in the array
+    for (let i = 0; i < uniqueElements.length; i++) {
+        for (let j = i; j < uniqueElements.length; j++) {
+            // Since we start the second loop from 'i', it ensures that each pair is unique and includes self pairs
+            pairs.push([uniqueElements[i], uniqueElements[j]]);
+        }
+    }
+
+    return pairs;
+}
+
+// Example usage:
+let testArray = [1, 2, 1, 3, 5];
+console.log(pairsMaker(testArray));
+
+
+
 
 
 //---------- QUESTION 2 ----------
@@ -126,19 +103,73 @@
 // Write a function called pairProduct(arr, product) that accepts an array of numbers and a product (the result when two numbers were multiplied together) as arguments. The function should return a boolean indicating whether or not a pair of distinct elements in the array result in the product when multiplied together. You may assume that the input array contains unique elements.
 
 
-// function pairProduct(arr, product) {
+// function pairProduct(arr) {
+//
+//     let seen = new Set();
+//
+//     let pairedResults = [];
+//
+//     for (let i = 0; i < arr.length; i++) {
+//
+//         if (seen.has(i)) {
+//
+//             continue;
+//
+//
+//         }
+//
+//
+//         for (let j = i + 1; j < arr.length; j++) {
+//
+//
+//             if (seen.has(j)) {
+//
+//                 continue;
+//
+//
+//             }
+//
+//             pairedResults.push([arr[i],arr[j]]);
+//
+//
+//             seen.add(i);
+//
+//
+//             seen.add(j);
+//
+//             break;
+//
+//
+//         }
+//
+//
+//     }
+//
+//     return pairedResults;
+//
+//
+// }
+//
+// console.log(pairProduct([1, 2, 3, 3, 4, 5, 6, 7, 8, 9, 0]));
+
+
+//---------- QUESTION 4 ----------
+// Strange Sums
+
+// Write a function called strangeSums(arr) that accepts an array of numbers as an argument. The method should return a count of the number of distinct pairs of elements that have a sum of zero. You may assume that the input array contains unique elements.
+
+
+// function strangeSums(arr) {
 //
 //     let seen = new Set();
 //
 //     for (let i = 0; i < arr.length; i++) {
 //
+//         let compliment = 0 - arr[i];
 //
-//         let complimentNumber = product / arr[i];
+//         if (seen.has(compliment)) {
 //
-//
-//         if (seen.has(complimentNumber)) {
-//
-//             return true;
+//             return seen.size;
 //
 //
 //         }
@@ -148,47 +179,13 @@
 //
 //     }
 //
-//     return false;
+//     return "The distinct numbers don't exist"
 //
 //
 // }
 //
-// console.log(pairProduct([1, 2, 3, 3, 4, 5, 6, 7, 8, 9, 0], 10));
-
-
-//---------- QUESTION 4 ----------
-// Strange Sums
-
-// Write a function called strangeSums(arr) that accepts an array of numbers as an argument. The method should return a count of the number of distinct pairs of elements that have a sum of zero. You may assume that the input array contains unique elements.
-
-
-function strangeSums(arr) {
-
-    let seen = new Set();
-
-    for (let i = 0; i < arr.length; i++) {
-
-        let compliment = 0 - arr[i];
-
-        if (seen.has(compliment)) {
-
-            return seen.size;
-
-
-        }
-
-        seen.add(arr[i]);
-
-
-    }
-
-    return "The distinct numbers don't exist"
-
-
-}
-
-
-console.log(strangeSums([1, 2, 3, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]));
+//
+// console.log(strangeSums([1, 2, 3, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]));
 
 
 
