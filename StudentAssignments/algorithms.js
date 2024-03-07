@@ -7,7 +7,7 @@
 // ---------- OVERVIEW AND INSTRUCTIONS ----------
 // Algorithms
 // This is the coding assigment for the sixth week of the Intro to Programming course from Code the Dream. The concepts touched on in this assignment include:
-//  - What is an algortihm?
+//  - What is an algorithm?
 //  - Properties of a good algorithm
 //  - Ideas on how to solve a problem using an algorithm
 //  - Practice a few algorithms in JavaScript
@@ -18,7 +18,7 @@
 
 // As always, click the green Run button at the top of the screen to see the output of your called functions in the Console tab to the right of this screen. Check to make sure that the output you get in your Console is the expected output.  To ensure you get comfortable with and learn the syntax well, be sure your AI code completion options are off!  You can find instructions on how to do this in your README.md file under "Instructions".
 
-// NOTE: These problems (aka algortihm questions) have not necessarily been covered in depth in the lessons so far, so please use your resources (mentors, classmates, etc) to help you. You can also use Google to help you.  There will not be example logs or example output for these questions.
+// NOTE: These problems (aka algorithm questions) have not necessarily been covered in depth in the lessons so far, so please use your resources (mentors, classmates, etc) to help you. You can also use Google to help you.  There will not be example logs or example output for these questions.
 
 // FOR ADDITIONAL PRACTICE WE RECOMMEND THE FOLLOWING IN ADDITION TO THIS ASSIGNMENT:
 // 1. Navigate to freecodecamp.org and create a free account
@@ -36,26 +36,26 @@
 // Write a function called pairsMaker(arr) that takes in an array as an argument. The function should return a 2-Dimensional array (an array of arrays) where the subarrays represent unique pairs of elements from the input array.
 
 function pairsMaker(arr) {
-    let uniqueElements = [...new Set(arr)]; // Convert array to a set to remove duplicates, then back to array
-    let pairs = []; // Initialize an empty array to store the unique pairs
+
+    // We initialize a set data structure, which helps us remove any duplicates and then it gets converted back to an array.
+
+    let uniqueElements = [...new Set(arr)];
+
+    // The pairs variable is an empty container as of now and it will hold all the unique values, when it gets added by the push method.
+    let pairs = [];
 
     // Iterate over each unique element in the array
     for (let i = 0; i < uniqueElements.length; i++) {
+
+        // We will use a nested forLoop which allows us to account for self-pairing values as well
         for (let j = i; j < uniqueElements.length; j++) {
-            // Since we start the second loop from 'i', it ensures that each pair is unique and includes self pairs
+
             pairs.push([uniqueElements[i], uniqueElements[j]]);
         }
     }
 
     return pairs;
 }
-
-// Example usage:
-let testArray = [1, 2, 1, 3, 5];
-console.log(pairsMaker(testArray));
-
-
-
 
 
 //---------- QUESTION 2 ----------
