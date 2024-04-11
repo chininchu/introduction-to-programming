@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Design Principles</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
+<h1>CSS Design Principles</h1>
 
+<section class="separation">
+    <h2>Separation of Concerns</h2>
+    <p>HTML defines content; CSS styles it.</p>
+</section>
+
+<section class="cascade-inheritance">
+    <h2>Cascade & Inheritance</h2>
+    <div class="box">
+        <p>I inherit styles, but some are overridden.</p>
+    </div>
+</section>
+
+<section class="specificity">
+    <h2>Specificity</h2>
+    <div class="example">
+        <p id="inline-style">Inline styles win!</p>
+    </div>
+</section>
+
+<section class="box-model">
+    <h2>Box Model</h2>
+    <div class="model-demo">
+        <p>Content + Padding + Border + Margin</p>
+    </div>
+</section>
 </body>
 </html>

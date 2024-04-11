@@ -1,0 +1,41 @@
+
+1.	Separation of Concerns (SoC)
+o	Definition: The principle of keeping your HTML (structure), CSS (styling), and JavaScript (behavior) in separate files. This enhances maintainability, readability, and organization.
+
+
+
+
+2.	Specificity
+o	Definition: A set of rules dictating how browsers determine which CSS styles to apply when there are conflicts. More specific selectors take precedence. Specificity is calculated by type of selector, number of each type, and order.
+
+
+
+
+
+
+3.	The Box Model
+o	Definition: Every element in CSS is considered a rectangular box. Understanding the box model is crucial for layout and spacing. It consists of:
+	Content: The text or image within the element.
+	Padding: Transparent space around the content.
+	Border: A line surrounding the padding and content.
+	Margin: Transparent space around the border, separating elements.
+
+
+
+
+
+4.	Inheritance
+o	Definition: Some CSS properties are passed down from parent elements to their children. Examples include 'color', 'font-size' and others. Understanding this helps streamline your styling.
+
+
+
+
+
+
+5.	The Cascade
+o	Definition: The way browsers determine which styles apply when multiple sources exist. The cascade considers importance (e.g., !important), source order, and specificity.
+
+
+
+
+

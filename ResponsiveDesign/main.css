@@ -1,0 +1,46 @@
+/* General Styles */
+body {
+    font-family: sans-serif;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* Separation of Concerns Example */
+.separation p {
+    color: blue;
+}
+
+/* Cascade and Inheritance Example */
+.cascade-inheritance .box {
+    background-color: lightgray;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+.cascade-inheritance p {
+    color: red; /* This will override an inherited color */
+}
+
+/* Specificity Example */
+p {
+    color: green;
+}
+
+.example p {
+    color: purple; /* Class styles have higher specificity */
+}
+
+#inline-style {
+    color: orange; /* Inline styles have the highest specificity */
+}
+
+/* Box Model Example */
+.model-demo {
+    background-color: #f0f0f0;
+    border: 5px solid #007bff;
+    padding: 20px;
+    margin: 20px;
+    width: 200px; /* Limit width to visualize box components */
+}
