@@ -1,0 +1,28 @@
+/* Base styles for mobile */
+nav ul {
+    display: flex; /* Arranges items horizontally */
+    flex-wrap: wrap; /* Allows items to wrap onto multiple lines if needed */
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+nav li a {
+    display: block; /* Each link takes up full width */
+    text-align: center;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* Styles for larger screens (tablets and above) */
+@media (min-width: 768px) {
+    nav ul {
+        flex-wrap: nowrap; /* Items in a single row */
+    }
+
+    nav li a {
+        /* Style changes for larger screens if needed */
+    }
+}
