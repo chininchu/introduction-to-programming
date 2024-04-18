@@ -6,6 +6,8 @@
 
 // Get Single Element
 const mainTitle = document.getElementById('main-title');
+
+
 console.log(mainTitle);
 
 // Get Multiple Elements
@@ -22,12 +24,20 @@ console.log(descriptionParagraphs);
 const newListItem = document.createElement('li');
 newListItem.textContent = 'New list item!';
 
-// Modify an existing element
+console.log(newListItem);
+
+
+/*
+Modify an existing element
+*/
 mainTitle.textContent = "The DOM is Awesome!";
 
 // Add the new element to the page
 const myList = document.getElementById('my-list');
+
 myList.appendChild(newListItem);
+
+console.log(myList);
 
 
 //************************************
@@ -36,15 +46,27 @@ myList.appendChild(newListItem);
 
 
 // Add a class to an element for styling
+// const changeTextButton = document.getElementById('change-text');
+// // changeTextButton.classList.add('highlight');*/
+//
+// //************************************
+// // 5.Understanding and Working with Events
+// //************************************
+//
+
+
 const changeTextButton = document.getElementById('change-text');
-changeTextButton.classList.add('highlight');
-
-//************************************
-// 5.Understanding and Working with Events
-//************************************
 
 
-changeTextButton.addEventListener('click', function () {
-    const firstParagraph = document.querySelector('.description');
-    firstParagraph.textContent = 'The button was clicked!';
+changeTextButton.addEventListener('click', event => {
+
+    const description = document.querySelectorAll('.description');
+
+    description.forEach(element => {
+
+        element.classList.replace('description', 'highlight');
+
+    })
+
+
 });
