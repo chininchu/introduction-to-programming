@@ -19,3 +19,15 @@ mainTitle.textContent = "The DOM is Awesome!";
 // Add the new element to the page
 const myList = document.getElementById('my-list');
 myList.appendChild(newListItem);
+
+
+// Add a class to an element for styling
+const changeTextButton = document.getElementById('change-text');
+changeTextButton.classList.add('highlight');
+
+// Events
+
+changeTextButton.addEventListener('click', function() {
+    const firstParagraph = document.querySelector('.description');
+    firstParagraph.textContent = 'The button was clicked!';
+});
