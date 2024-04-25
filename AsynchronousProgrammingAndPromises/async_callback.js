@@ -9,7 +9,7 @@ function fetchData(callback) {
     setTimeout(() => {
         const data = {message: "Data from a slow operation"};
         callback(data);
-    }, 3000); // Simulate a 2-second delay
+    }, 1000); // Simulate a 2-second delay
 }
 
 console.log("Starting...");
@@ -17,3 +17,4 @@ fetchData((data) => {
     console.log(data);
 });
 console.log("Finished!");
+
