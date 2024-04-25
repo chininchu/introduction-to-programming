@@ -1,9 +1,15 @@
 "use strict";
+
+/*
+Asynchronous Programming: Code execution doesn't wait for long-running tasks to finish, allowing other tasks to run concurrently.
+*/
+
+
 function fetchData(callback) {
     setTimeout(() => {
-        const data = { message: "Data from a slow operation" };
+        const data = {message: "Data from a slow operation"};
         callback(data);
-    }, 1000); // Simulate a 2-second delay
+    }, 3000); // Simulate a 2-second delay
 }
 
 console.log("Starting...");
