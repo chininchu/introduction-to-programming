@@ -2,7 +2,7 @@
 
 //************************************
 // 2. Get Single and Multiple Elements
-//************************************
+//!************************************
 
 // Get Single Element
 const mainTitle = document.getElementById('main-title');
@@ -15,9 +15,9 @@ const descriptionParagraphs = document.getElementsByClassName('description');
 console.log(descriptionParagraphs);
 
 
-//************************************
+//!************************************
 // 3.Creating and Modifying HTML elements
-//************************************
+//!************************************
 
 
 // Create a new element
@@ -27,9 +27,9 @@ newListItem.textContent = 'New list item!';
 console.log(newListItem);
 
 
-/*
-Modify an existing element
-*/
+
+/*Modify an existing element
+*!/*/
 mainTitle.textContent = "The DOM is Awesome!";
 
 // Add the new element to the page
@@ -40,18 +40,18 @@ myList.appendChild(newListItem);
 console.log(myList);
 
 
-//************************************
+//!************************************
 // 4.Dynamically Adding Styles
-//************************************
+//!************************************
 
 
 // Add a class to an element for styling
 // const changeTextButton = document.getElementById('change-text');
 // // changeTextButton.classList.add('highlight');*/
 //
-// //************************************
+// //!************************************
 // // 5.Understanding and Working with Events
-// //************************************
+// //!************************************
 //
 
 
@@ -70,3 +70,12 @@ changeTextButton.addEventListener('click', event => {
 
 
 });
+
+navigator.geolocation.getCurrentPosition(position => {
+
+    console.log(position);
+});
+
+
+
+
