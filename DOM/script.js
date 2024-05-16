@@ -8,7 +8,9 @@
 const mainTitle = document.getElementById('main-title');
 
 
-console.log(mainTitle);
+// console.log(mainTitle);
+
+
 
 // Get Multiple Elements
 const descriptionParagraphs = document.getElementsByClassName('description');
