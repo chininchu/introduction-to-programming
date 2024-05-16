@@ -15,6 +15,7 @@ const descriptionParagraphs = document.getElementsByClassName('description');
 console.log(descriptionParagraphs);
 
 
+
 //!************************************
 // 3.Creating and Modifying HTML elements
 //!************************************
